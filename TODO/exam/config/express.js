@@ -46,13 +46,13 @@ db.on('error', function () {
       res.status(404);
       res.send('404 Not Found');
     });
-  
+  //adds 404 error handling//
     app.use(function (err, req, res, next) {
       res.type('text/plan');
       res.status(500);
       res.send('500 Server Error');  
     });
-  
+  //adds 500 error handling//
     console.log("Starting application");
   
   };

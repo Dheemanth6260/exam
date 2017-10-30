@@ -1,6 +1,6 @@
 var path = require('path'),    
 rootPath = path.normalize(__dirname + '/..'),    
-env = process.env.NODE_ENV || 'development';
+env = process.env.NODE_ENV || 'development';//the configuration will use either the development or production configuration based on the NODE_ENV environment variable//
  
 var config = {  
 development: {    
@@ -12,5 +12,5 @@ development: {
  
   };
  
-module.exports = config[env];
+module.exports = config[env];//exports the confg determined by the env variable//
  
